@@ -1,7 +1,7 @@
-link để tìm hiểu cách kết nối mqtt bằng 4g 'https://linhkienthuduc.com/huong-dan-su-dung-module-4g-voi-esp32-mqtt'
-link tìm hiểu về MCU 'https://thietbiketnoi.com/mcu-la-gi-vi-dieu-khien-tich-hop-tren-cac-he-thong-nhung.html'
-link để vẽ lưu đồ thuật toán 'https://app.diagrams.net/?fbclid=IwAR13zLX3UPSbVYh85KTmiexB3rFXzJEYI_FqM-Smb0GY6lSC_tfE-dbrjjk'
-link để học về C+ 'https://www.laptrinhdientu.com/'
+link để tìm hiểu cách kết nối mqtt bằng 4g "https://linhkienthuduc.com/huong-dan-su-dung-module-4g-voi-esp32-mqtt"
+link tìm hiểu về MCU "https://thietbiketnoi.com/mcu-la-gi-vi-dieu-khien-tich-hop-tren-cac-he-thong-nhung.html"
+link để vẽ lưu đồ thuật toán "https://app.diagrams.net/?fbclid=IwAR13zLX3UPSbVYh85KTmiexB3rFXzJEYI_FqM-Smb0GY6lSC_tfE-dbrjjk"
+link để học về C+ "https://www.laptrinhdientu.com/"
 
 Ý TƯỞNG
 
@@ -10,15 +10,15 @@ link để học về C+ 'https://www.laptrinhdientu.com/'
 
 KIẾN THỨC CẦN TÌM HIỂU
 
-- đầu tiên cần có kiến thức về các ngoại vi của stm32 gồm UART, Timer, xem video này để có một số hình dung về kiến thức liên quan 'https://www.youtube.com/watch?v=6kBSlSxHXJ0'
+- đầu tiên cần có kiến thức về các ngoại vi của stm32 gồm UART, Timer, xem video này để có một số hình dung về kiến thức liên quan "https://www.youtube.com/watch?v=6kBSlSxHXJ0"
 -  UART IRQ handler sẽ được gọi mỗi khi một byte dữ liệu được nhận từ UART, trong khi RXCPCallback sẽ được gọi khi toàn bộ dữ liệu được nhận từ UART. Việc sử dụng UART IRQ handler và RXCPCallback phụ thuộc vào từng ứng dụng cụ thể và yêu cầu của nó.
 - sẽ dùng ngắt Timer để mỗi 2s gửi dữ liệu gps, 2s là thời gian đảm bảo tín hiệu truyền đi đáp ứng thời gian thực, tức là gần như bắt kịp mọi di chuyển của thiết bị.
-- tìm hiểu về module GPS tại đây 'https://docs.ai-thinker.com/en/gps%E6%A8%A1%E7%BB%84%E4%B8%93%E9%A2%982', decode chuỗi mã gửi từ module theo hình trong file gps.png, tìm hiểu về các định dạng gps 'https://brandidowns.com/?p=77'
-- thông tin về gps, thời gian truyền, mã ảnh cũng như ID đều được mã hóa thành chuỗi JSON 'https://teky.edu.vn/blog/json-la-gi/'
-- ESP32_CAM sử dụng để chụp ảnh cũng như truyền nhận dữ liệu từ MQTT broker 'https://randomnerdtutorials.com/esp32-cam-ai-thinker-pinout/'
-ảnh chụp từ ESP32-CAM muốn gửi qua MQTT thì phải được mã hóa thành mã base64, khi debug, muốn chuyển ảnh sang base64 thì vào link 'https://www.rapidtables.com/web/tools/base64-to-image.html'
-- module RFID chúng ta sử dụng là loại module khi quẹt thẻ nó sẽ lấy ID thẻ và gửi về vdk qua giao thức UART, tìm hiểu về module ở đây 'https://www.amazon.com/Taidacent-Wireless-Reader-Frequency-Wiegand/dp/B08QRCLS6L?th=1'
-- link tìm các hàm cơ bản trong dùng string của c là 'https://viettuts.vn/c-string/ham-strcat-trong-c'
+- tìm hiểu về module GPS tại đây "https://docs.ai-thinker.com/en/gps%E6%A8%A1%E7%BB%84%E4%B8%93%E9%A2%982", decode chuỗi mã gửi từ module theo hình trong file gps.png, tìm hiểu về các định dạng gps "https://brandidowns.com/?p=77"
+- thông tin về gps, thời gian truyền, mã ảnh cũng như ID đều được mã hóa thành chuỗi JSON "https://teky.edu.vn/blog/json-la-gi/"
+- ESP32_CAM sử dụng để chụp ảnh cũng như truyền nhận dữ liệu từ MQTT broker "https://randomnerdtutorials.com/esp32-cam-ai-thinker-pinout/"
+ảnh chụp từ ESP32-CAM muốn gửi qua MQTT thì phải được mã hóa thành mã base64, khi debug, muốn chuyển ảnh sang base64 thì vào link "https://www.rapidtables.com/web/tools/base64-to-image.html"
+- module RFID chúng ta sử dụng là loại module khi quẹt thẻ nó sẽ lấy ID thẻ và gửi về vdk qua giao thức UART, tìm hiểu về module ở đây "https://www.amazon.com/Taidacent-Wireless-Reader-Frequency-Wiegand/dp/B08QRCLS6L?th=1"
+- link tìm các hàm cơ bản trong dùng string của c là "https://viettuts.vn/c-string/ham-strcat-trong-c"
 
 TIẾN HÀNH CODE
 
