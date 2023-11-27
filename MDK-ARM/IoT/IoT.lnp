@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"iot\startup_stm32f103xb.o"
+"iot\main.o"
+"iot\stm32f1xx_it.o"
+"iot\stm32f1xx_hal_msp.o"
+"iot\stm32f1xx_hal_gpio_ex.o"
+"iot\stm32f1xx_hal_tim.o"
+"iot\stm32f1xx_hal_tim_ex.o"
+"iot\stm32f1xx_hal.o"
+"iot\stm32f1xx_hal_rcc.o"
+"iot\stm32f1xx_hal_rcc_ex.o"
+"iot\stm32f1xx_hal_gpio.o"
+"iot\stm32f1xx_hal_dma.o"
+"iot\stm32f1xx_hal_cortex.o"
+"iot\stm32f1xx_hal_pwr.o"
+"iot\stm32f1xx_hal_flash.o"
+"iot\stm32f1xx_hal_flash_ex.o"
+"iot\stm32f1xx_hal_exti.o"
+"iot\stm32f1xx_hal_uart.o"
+"iot\system_stm32f1xx.o"
+--strict --scatter "IoT\IoT.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "IoT.map" -o IoT\IoT.axf
